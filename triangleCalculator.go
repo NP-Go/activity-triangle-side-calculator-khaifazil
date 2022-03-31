@@ -2,12 +2,13 @@ package main
 
 import (
 	"fmt"
+	"math"
 )
 
 func calculateSide(length1, length2, angle float64) float64 {
 
 	//Insert the code here
-
+	length3 := (length1 * length1) + (length2 * length2) - (2*length1*length2)*math.Cos(angle)
 	//Do not remove this line
 	fmt.Println("The 3rd length of the triange is", length3)
 	return length3
